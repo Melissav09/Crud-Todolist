@@ -18,6 +18,14 @@
     font-family: 'montserrat', sans-serif;
 }
 
+header{
+    background: #afafe2;
+}
+
+ul{
+    font-size: 23px;
+    align-content: space-around;
+}
 
 input:not([type="radio"]):not([type="checkbox"]), button {
     appearance: none;
