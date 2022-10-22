@@ -1,14 +1,14 @@
 :root {
-    --primary: #EA40A4;
-    --business: #3A82EE;
+    --primary: #ce40ea;
+    --business: #eb0c4f;
     --personal: var(--primary);
     --light: #EEE;
     --dark: #313154;
     --danger: #ff5b57;
     --grey: #888;
     --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    --business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
-    --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+    --business-glow: 0px 0px 4px rgb(235, 12, 79, 0.75);
+    --personal-glow: 0px 0px 4px rgb(206, 64, 234, 0.75);
 }
 
 *{

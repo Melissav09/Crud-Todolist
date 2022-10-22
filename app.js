@@ -13,9 +13,9 @@ window.addEventListener('load', () => {
 
 	newTodoForm.addEventListener('submit', e => {
 		e.preventDefault();
-
+ 
 		const todo = {
-			content: e.target.elements.content.value,
+			content: e.target.elements[0].value,
 			category: e.target.elements.category.value,
 			done: false,
 			createdAt: new Date().getTime()
@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
 
 		todos.push(todo);
 
-		localStorage-setItem('todos', JSON.stringify(todos));
+		localStorage.setItem('todos', JSON.stringify(todos));
 
 		// Reset the form
 		e.target.reset();
@@ -56,7 +56,7 @@ function DisplayTodos () {
 		if (todo.category == 'personal') {
 			span.classList.add('personal');
 		} else {
-			span.classList.add('business');
+			span.classList.add('academic');
 		}
 		content.classList.add('todo-content');
 		actions.classList.add('actions');
